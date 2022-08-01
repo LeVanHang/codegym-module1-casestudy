@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">-
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CSS/slide.css">
+    <link rel="stylesheet" href="../CSS/web_menu.css">
+
+</head>
+<body onload="window">
+<section>
+    <img src="../img/logo.png" alt="Loving Hut Slider" style="max-height:100%; max-width:100%;">
+</section>
+<nav>
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li class="dropdown">
+            <a  class="dropdown">Sản phẩm</a>
+            <div class="dropdown-content">
+                <a href="sp_dl.html">Sản phẩm đông lạnh</a>
+                <a href="#">Sản phẩm khô</a>
+                <a href="#">Sản phẩm gia vị</a>
+                <a href="ql_sp.html">Sản phẩm khác</a>
+            </div>
+        <li><a href="#link">Giới thiệu</a></li>
+        <li><a href="#link">Tin tức</a></li>
+        <li><a href="#link">Liên hệ</a></li>
+        <li><a href="login_sigin.html">Đăng nhập</a></li>
+        <li><a href="login_sigin.html">Đăng ký</a></li>
+        <li class="search">
+            Search
+            <div class="search-bar">
+                <form>
+                    <input type="text" name="search" placeholder="Search..." onclick="search()">
+                </form>
+            </div>
+        </li>
+    </ul>
+</nav>
+<!-- Thẻ Chứa Slideshow -->
+<div class="slideshow-container">
+    <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="../img/suc-khoe.jpg" style="width: 100%">
+        <div class="text"><h1>Thuần chay với sức khỏe của bạn</h1></div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="../img/medition.png" style="width:100%">
+        <div class="text"><h1>Vegan meditation</h1></div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="../img/mesi.jpg" style="width:100%">
+        <div class="text"><h1>Những người nổi tiếng thuần chay</h1></div>
+    </div>
+    <!-- Nút điều khiển mũi tên-->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+<!-- Nút tròn điều khiển slideshow-->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+<script src="../JS/Product.js"></script>
+<script src="../JS/manager.js"></script>
+
+<script src="../JS/slide.js"></script>
+</body>
+</html>
